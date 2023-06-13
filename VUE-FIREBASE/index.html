@@ -9,7 +9,10 @@
   <body>
     <h1>Hello, VUE</h1>
     <div id="app">
-      <h2>I am the template now</h2>
+      <p>{{title}}-{{author}}-{{age}}</p>
+      <button @click="age++">Increase age</button>
+      <button @click="age--">Decrease age</button>
+      <div @click="changeTitle('JunlingZhuang')">Change book title</div>
     </div>
     <script src="app.js"></script>
   </body>
