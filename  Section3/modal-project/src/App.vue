@@ -3,13 +3,15 @@
   <br />
   <input type="text" ref="name" />
   <button @click="handleClick">click me</button>
+  <br />
+  <Modal />
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Modal from "./components/Modal.vue";
 
 export default {
   name: "App",
+  components: { Modal },
   data() {
     return {
       title: "My First Vue app",
@@ -24,7 +26,6 @@ export default {
   },
 };
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
